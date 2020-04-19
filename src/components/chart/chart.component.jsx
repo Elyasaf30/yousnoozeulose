@@ -6,12 +6,10 @@ import { Line } from "react-chartjs-2";
 import styles from "./chart.module.css";
 const Chart = () => {
   const [dailyData, setDailyData] = useState([]);
-  console.log(dailyData);
 
   useEffect(() => {
     let apiCalled = false;
     if (!apiCalled) {
-      console.log("effect called");
       const fetchResponse = async () => {
         setDailyData(await fetchDailyData());
       };
@@ -44,7 +42,6 @@ const Chart = () => {
       }}
     />
   ) : null;
-  console.log("rendering");
   return <div className={styles.container}>{LineChart}</div>;
 };
 
