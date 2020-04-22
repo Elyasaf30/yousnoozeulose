@@ -6,6 +6,12 @@
   margin: 0 2% !important;
 }
 
+.loading {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
